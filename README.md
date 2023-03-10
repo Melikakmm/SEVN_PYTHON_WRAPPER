@@ -1,10 +1,14 @@
-# SEVN_PYTHON_WRAPPER
-python wrappers for SEVN
 
 
 
+# Brief Introduction to Sevn:
+
+SEVN, or Stellar EVolution N-body, is a rapid population synthesis code developed in C++. The purpose of this software is to simulate the evolution of binary systems where the properties of the entire system depend heavily on the properties of the stars within it and their interactions.
 
 
+# About This Project:
+
+The aim of this project is to utilize the fast performance of C++ and the user-friendliness of Python to wrap the SEVN software, enabling users to interact with it without having to handle the difficulties posed by the C++ language while retaining the impressive performance that C++ offers.
 
 
 
