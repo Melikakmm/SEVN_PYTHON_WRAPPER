@@ -1,1 +1,20 @@
 
+# An Introduction To Cython : 
+
+Cython is a programming language that is designed to combine the power and speed of C and C++ with the ease and flexibility of Python. One of the main applications of Cython is to wrap C++ libraries in a way that makes them accessible to Python code. wrapping C++ libraries with Cython allows Python developers to leverage the power of C++ without having to learn an entirely new programming language or deal with the complexity of C++ directly. This makes it easier to write high-performance code for scientific and numerical computing applications, ultimately improving the speed and efficiency of data analysis and processing.
+
+
+Cython documentation is found here : https://cython.readthedocs.io/en/latest/
+
+
+
+# Progress step by step :
+
+1. The first step we took was to wrap utilities.h which is located in Sevn folder. we wrapped some functions and members to get to know cython better. The result can be found in the utilities file.
+
+2. The second task was to wrap the class Binstar (or Binstar.h again in Sevn folder). This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code]() to help us find all of these dependecies.
+
+
+3. There are also some information gained by us about cython which could be found useful, they are also provided in Info section.
+
+
