@@ -15,6 +15,6 @@ Cython documentation is found here : https://cython.readthedocs.io/en/latest/
 2. The second task was to wrap the class Binstar (or Binstar.h again in src). This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code]() to help us find all of these dependecies.
 
 
-3. There are also some information gained by us about cython which could be found useful, they are also provided in Info section.
+3. We also started wrapping the IO class, but it is still under developement.
 
 
