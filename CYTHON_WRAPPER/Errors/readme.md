@@ -21,3 +21,10 @@ Another problem we have with constructors is that we couldn't design a way to pu
 <img src="con2.png" width="1000" height="250">
 <img src="con3.png" width="1000" height="500">
 
+
+### 3. non Virtual destructor: 
+
+In the c++ hedar file for binstar class, the class doesn't have a virtual destructor, that is why we recieved this warning. 
+
+<img src="nonvirtual.png" width="1000" height="250">
+
