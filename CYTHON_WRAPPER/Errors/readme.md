@@ -2,4 +2,4 @@
 
 we tried to compile cython wrapper with Clang, and it seems Clang cannot handle overwriting the same methods which were extracted from different c++ header files; therefore, it produces this error. 
 
-<img src="Clang.png" width="700" height="500">
+<img src="Clang.png" width="900" height="450">
