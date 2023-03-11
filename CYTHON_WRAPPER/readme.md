@@ -18,6 +18,6 @@ Cython documentation is found [here](https://cython.readthedocs.io/en/latest/)
 3. We also started wrapping the IO class, but it is still under developement. The result can be found in [IO](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/IO) file.
 
 
-4. There is also an [error]() file that explains the reasons of some errors and warnings we faced during compiling the cython code.
+4. There is also an [error](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/Errors) file that explains the reasons of some errors and warnings we faced during compiling the cython code.
 
 
