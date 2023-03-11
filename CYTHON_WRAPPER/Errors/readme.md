@@ -14,4 +14,4 @@ On the other hand, the __cinit__ in the Binstar class accepts every type both py
 
 
 
-<img src="con.png" width="900" height="200">
+<img src="con.png" width="100" height="100">
