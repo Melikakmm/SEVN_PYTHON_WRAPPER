@@ -22,9 +22,18 @@ Another problem we have with constructors is that we couldn't design a way to pu
 <img src="con3.png" width="1000" height="500">
 
 
-### 3. non Virtual destructor: 
+### 3. Non-Virtual Destructor: 
 
 In the c++ hedar file for binstar class, the class doesn't have a virtual destructor, that is why we recieved this warning. 
 
 <img src="nonvirtual.png" width="1000" height="250">
+
+
+
+### 4. Private Methods From Other files:
+
+While wrapping the Binstar's methods, we faced this error since some methods were externed from other files rather than Binstar source file, and they were private, that's why we couldn't call them.
+
+
+<img src="private.png" width="1000" height="250">
 
