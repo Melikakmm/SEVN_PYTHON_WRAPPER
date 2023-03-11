@@ -1,6 +1,6 @@
 ### 1. Clang:
 
-we tried to compile cython wrapper with Clang, and it seems Clang cannot handle overwriting the same methods which were extracted from different c++ header files; therefore, it produces this error. 
+we tried to compile cython wrapper with Clang, and it seems Clang cannot handle overwriting the same methods which were extracted from different c++ header files; therefore, it produces this error. for solving these warnings we suggest to use homebrew gcc.
 
 <img src="Clang.png" width="900" height="450">
 
