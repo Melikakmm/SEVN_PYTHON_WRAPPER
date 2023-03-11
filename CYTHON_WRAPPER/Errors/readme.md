@@ -35,5 +35,5 @@ In the c++ hedar file for binstar class, the class doesn't have a virtual destru
 While wrapping the Binstar's methods, we faced this error since some methods were externed from other files rather than Binstar source file, and they were private, that's why we couldn't call them.
 
 
-<img src="private.png" width="1000" height="250">
+<img src="private.png" width="1000" height="500">
 
