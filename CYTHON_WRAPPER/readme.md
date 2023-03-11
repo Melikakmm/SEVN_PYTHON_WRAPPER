@@ -18,3 +18,6 @@ Cython documentation is found here : https://cython.readthedocs.io/en/latest/
 3. We also started wrapping the IO class, but it is still under developement.
 
 
+4. There are also some error handling file that explains how we resolved the errors from cython.
+
+
