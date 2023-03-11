@@ -13,6 +13,11 @@ the most problemtic part of the code belongs to the second contructors in genera
 On the other hand, the __cinit__ in the Binstar class accepts every type both python and c++, but we have to be careful whether we want to put python objects or nor, since python objects affect the performance of the programme.
 
 
+Another problem we have with constructors is that we couldn't design a way to put them together in the same initialization __cinit__ , since the only way that we could think of was to use None for all arguments in __cinit__ and make an "if condition" that tells the programme **if** all the arguments are **None** then revoke the first constructor, **else** call the second one.
+
+
 
 <img src="con.png" width="1000" height="200">
+<img src="con2.png" width="1000" height="200">
+<img src="con3.png" width="1000" height="200">
 
