@@ -10,7 +10,7 @@
 
 [Binstar.cpp](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/blob/main/CYTHON_WRAPPER/Binstar/Binstar.cpp) is the c++ file that cython compiler generates.
 
-[Binstar_wrap_notebook (2).ipynb]() is the jupyter notebook of all aforementioned files.
+[Binstar_wrap_notebook (2).ipynb](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/blob/main/CYTHON_WRAPPER/Binstar/Binstar_wrap_notebook%20(2).ipynb) is the jupyter notebook of all aforementioned files.
 
 
 
