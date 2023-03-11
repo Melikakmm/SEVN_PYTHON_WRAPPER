@@ -10,7 +10,7 @@ Binstar.cpython-310-darwin.so is the extension or the shared library created for
 
 Binstar.cpp is the c++ file that cython compiler generates.
 
-Binstar.ipynb is the jupyter notebook of all aforementioned files.
+Binstar_wrap_notebook (2).ipynb is the jupyter notebook of all aforementioned files.
 
 
 
