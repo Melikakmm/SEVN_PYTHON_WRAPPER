@@ -12,7 +12,7 @@ Cython documentation is found here : https://cython.readthedocs.io/en/latest/
 
 1. The first step we took was to wrap utilities.h which is located in src. we wrapped some functions and members to get to know cython better. The result can be found in the utilities file.
 
-2. The second task was to wrap the class Binstar (or Binstar.h again in src). This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code]() to help us find all of these dependecies.
+2. The second task was to wrap the class Binstar (or Binstar.h again in src). This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/PY_TOOL) to help us find all of these dependecies.
 
 
 3. We also started wrapping the IO class, but it is still under developement.
