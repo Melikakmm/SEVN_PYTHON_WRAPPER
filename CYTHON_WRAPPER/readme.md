@@ -1,12 +1,4 @@
 
-# An Introduction To Cython : 
-
-Cython is a programming language that is designed to combine the power and speed of C and C++ with the ease and flexibility of Python. One of the main applications of Cython is to wrap C++ libraries in a way that makes them accessible to Python code. wrapping C++ libraries with Cython allows Python developers to leverage the power of C++ without having to learn an entirely new programming language or deal with the complexity of C++ directly. This makes it easier to write high-performance code for scientific and numerical computing applications, ultimately improving the speed and efficiency of data analysis and processing.
-
-
-Cython documentation can be found [here](https://cython.readthedocs.io/en/latest/).
-
-
 
 # Progress step by step :
 
@@ -19,5 +11,18 @@ Cython documentation can be found [here](https://cython.readthedocs.io/en/latest
 
 
 4. There is also an [error](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/Errors) file that explains the reasons of some errors and warnings we faced during compiling the cython code.
+
+
+
+
+
+# A Brief Introduction To Cython : 
+
+Cython is a programming language that is designed to combine the power and speed of C and C++ with the ease and flexibility of Python. One of the main applications of Cython is to wrap C++ libraries in a way that makes them accessible to Python code. wrapping C++ libraries with Cython allows Python developers to leverage the power of C++ without having to learn an entirely new programming language or deal with the complexity of C++ directly. This makes it easier to write high-performance code for scientific and numerical computing applications, ultimately improving the speed and efficiency of data analysis and processing.
+
+
+Cython documentation can be found [here](https://cython.readthedocs.io/en/latest/).
+
+
 
 
