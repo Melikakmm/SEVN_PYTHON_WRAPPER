@@ -10,14 +10,14 @@ Cython documentation is found here : https://cython.readthedocs.io/en/latest/
 
 # Progress step by step :
 
-1. The first step we took was to wrap utilities.h which is located in [src](). we wrapped some functions and members to get to know cython better. The result can be found in the [utilities](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/utilities) file.
+1. The first step we took was to wrap utilities.h which is located in [include](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/include). we wrapped some functions and members to get to know cython better. The result can be found in the [utilities](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/utilities) file.
 
-2. The second task was to wrap the class Binstar (or Binstar.h again in [src]()). The **cython wrapper** for this class can be found in [Binstar]() file. This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/PY_TOOL) to help us find all of these dependecies. 
-
-
-3. We also started wrapping the IO class, but it is still under developement.
+2. The second task was to wrap the class Binstar (or Binstar.h again in [include](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/include)). The **cython wrapper** for this class can be found in [Binstar]() file. This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/PY_TOOL) to help us find all of these dependecies. 
 
 
-4. There are also some error handling file that explains how we resolved the errors from cython.
+3. We also started wrapping the IO class, but it is still under developement. The result can be found in [IO]() file.
+
+
+4. There is also an [error]() file that explains the reasons of some errors and warnings we faced during compiling the cython code.
 
 
