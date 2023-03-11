@@ -94,8 +94,6 @@ def var_format(var):
 # Generate output folder and copy in the launch command and binary ran
 def update_outdir(self, launch_time):
     ## create the outpath folder
-    if not os.path.isdir(self.output.OUTPATH):
-        os.mkdir(self.output.OUTPATH)
     source = open(self.EXE, "rb")
     file_name=os.path.basename(self.EXE)
     dest = open(os.path.join(self.output.OUTPATH,file_name), "wb")
@@ -120,7 +118,6 @@ def gen_cmd_list(self):
     # Check SCOL, BCOL and NAMEPREX, if they are empty do not add it
     # As they are not in mappings dict add
     if hasattr(self, "SCOL"):#all in same param set
-        print('scol added')
         if isinstance(self.SCOL, str) and self.SCOL: cmd_dict["scol"] = 'scol ' + self.SCOL
         if isinstance(self.BCOL, str) and self.BCOL: cmd_dict["bcol"] = 'bcol ' + self.BCOL
         if isinstance(self.NAMEPREX, str) and self.NAMEPREX !="": cmd_dict["name_prefix"] ="name_prefix " + self.NAMEPREX
@@ -387,7 +384,8 @@ class sse:
         
     def run(self, NTHREADS ="1", #Number of OpenMP threads (1 means no parallel threads, sequential execution)
             NCHUNK = "1000", #Evolve Nchunk at time
-            DTOUT="list"):#If list use the dtout reported in the input list, otherwise use this value for all the stars and binaries (Can be a number in Myr (e.g. 10), a colon separated sequence in Myr (e.g. 10:100:10 goes from 10 Myr to 10
+            DTOUT="list", #If list use the dtout reported in the input list, otherwise use this value for all the stars and binaries (Can be a number in Myr (e.g. 10), a colon separated sequence in Myr (e.g. 10:100:10 goes from 10 Myr to 10
+            PRINTFILE =False): 
 
         run_dict = {'NTHREADS': str(NTHREADS), 'NCHUNK' : str(NCHUNK),  'DTOUT' : DTOUT}
         # concat the output lists
@@ -396,11 +394,33 @@ class sse:
         final_cmd = self.EXE + " " + "-"+' -'.join(F)
         self.output.RUNCMD = final_cmd
         launch_time = datetime.now()
-        
-        os.system("cd "+self.output.OUTPATH+"; "+final_cmd)#cleans folder 
+
+        if not os.path.isdir(self.output.OUTPATH):os.mkdir(self.output.OUTPATH)
+        print_option = None
+        #os.system("cd "+self.output.OUTPATH+"; "+final_cmd + print_option)#SEVN cleans folder automatically  
+        from subprocess import run as sp_run, PIPE# more compatable than capture_output
+        if PRINTFILE: print_option = PIPE
+        print('running')
+        sp=sp_run(final_cmd, stdout=print_option, stderr=print_option, shell=True, cwd=self.output.OUTPATH)
+
+        if PRINTFILE: 
+            run_output=sp.stdout
+            run_error=sp.stderr
+            if type(run_output)!=str: run_output=run_output.decode()
+            if type(run_error)!=str: run_error=run_error.decode()
+            print('RUN output saved to' + str(os.path.join(self.output.OUTPATH, 'run_output.txt')) )
+            run_output_path = os.path.join(self.output.OUTPATH, 'run_output.txt')
+            run_error_path = os.path.join(self.output.OUTPATH, 'err_output.txt')
+            out_f = open(run_output_path, "w")
+            out_f.write(run_output)
+            out_f.close()
+            out_f = open(run_error_path, "w")
+            out_f.write(run_error)
+            out_f.close()
+
         update_outdir(self, launch_time)
         self.runbool=True
-        
+
     def output_df(self):
         if self.runbool:## will make smarter soon
             import pandas as pd ## on
