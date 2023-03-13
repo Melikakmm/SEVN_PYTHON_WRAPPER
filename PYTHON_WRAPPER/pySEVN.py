@@ -67,7 +67,9 @@ def add_SEVN_path_to_file(file_path): # automatically adds the users SEVN path t
 
 def sevn_compile():
     if 'SEVN' not in globals():print(path_error)
-    else: os.system(os.path.join(SEVN, "compile.sh"))
+    else: #os.system(os.path.join(SEVN, "compile.sh"))
+        from subprocess import run as sp_run
+        sp=sp_run(os.path.join(SEVN, "compile.sh"), shell=True, cwd=SEVN)
 
 def check_compile():
     # only runs if not built
