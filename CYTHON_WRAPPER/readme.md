@@ -2,15 +2,20 @@
 
 # Progress step by step :
 
-1. The first step we took was to wrap utilities.h which is located in [include](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/include). we wrapped some functions and members to get to know cython better. The result can be found in the [utilities](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/utilities) file.
 
-2. The second task was to wrap the class Binstar (or Binstar.h again in [include](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/include)). The **cython wrapper** for this class can be found in [Binstar](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/Binstar) file. This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/PY_TOOL) to help us find all of these dependecies. 
-
-
-3. We also started wrapping the IO class, but it is still under developement. The result can be found in [IO](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/IO) file.
+1. The first step was to get to know cython, and c++. An elementry to intermediate knowledge of c++ was essential, since a good understanding of functions and memory allocations would help us to better convert and understand the code implemented in cython. Moreover, although Cython is a python-like language, it uses most of the c and c++ syntax. We also found this (book)[] very useful for programming in cython.
 
 
-4. There is also an [error](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/Errors) file that explains the reasons of some errors and warnings we faced during compiling the cython code.
+
+2. The second step we took was to wrap utilities.h which is located in [include](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/include). we wrapped some functions and members to get to know cython better. The result can be found in the [utilities](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/utilities) file.
+
+3. The third task was to wrap the class Binstar (or Binstar.h again in [include](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/include)). The **cython wrapper** for this class can be found in [Binstar](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/Binstar) file. This class had many dependencies on different classes and functions defined in various headers. At first we were facing a lot of problems finding these dependecies but my colleage [Jake Jackson](https://github.com/jjackson1994) wrote [this code](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/PY_TOOL) to help us find all of these dependecies. 
+
+
+4. We also started wrapping the IO class, but it is still under developement. The result can be found in [IO](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/IO) file.
+
+
+5. There is also an [error](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/tree/main/CYTHON_WRAPPER/Errors) file that explains the reasons of some errors and warnings we faced during compiling the cython code.
 
 
 
