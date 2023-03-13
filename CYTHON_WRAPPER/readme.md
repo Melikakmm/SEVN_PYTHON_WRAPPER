@@ -3,7 +3,7 @@
 # Progress step by step :
 
 
-1. The first step was to get to know cython, and c++. An elementry to intermediate knowledge of c++ was essential, since a good understanding of functions and memory allocations would help us to better convert and understand the code implemented in cython. Moreover, although Cython is a python-like language, it uses most of the c and c++ syntax. We also found this (book)[] very useful for programming in cython.
+1. The first step was to get to know cython, and c++. An elementry to intermediate knowledge of c++ was essential, since a good understanding of functions and memory allocations would help us to better convert and understand the code implemented in cython. Moreover, although Cython is a python-like language, it uses most of the c and c++ syntax. We also found this [book](https://github.com/Melikakmm/SEVN_PYTHON_WRAPPER/blob/main/CYTHON_WRAPPER/Info/Cython%20-%20A%20guide%20for%20Python%20programme...%20(z-lib.org).pdf) very useful for programming in cython.
 
 
 
