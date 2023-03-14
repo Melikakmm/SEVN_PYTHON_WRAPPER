@@ -2,7 +2,7 @@
 
 This wrapper allows users to run the c++ SEVN code from within simple Python Classes. In order to use this wrapper simply import the Python file [pySEVN.py](pySEVN.py) for more advanced users this can be added as a Python module through Cython. 
 
-This wrapper feeds in the information needed to the SEVN binaries as well as offers some simple ease of use functions like checking that SEVN has compiled and adding in the SEVNPATH to the compile script accordingly. 
+This wrapper feeds in the information needed to run SEVN as well as offers some simple ease of use functions like checking that SEVN has compiled and adding in the SEVNPATH to the compile script accordingly. 
 
 This repo contains: 
  
